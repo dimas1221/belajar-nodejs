@@ -1,0 +1,14 @@
+
+    <h1>ini halaman index</h1>
+    <h2>halo <%= nama %></h2>
+    <h3>daftar mhs</h3>
+
+    <% if (mahasiswa.length < 1) { %>
+      <p>Data masih kosong</p> 
+    <% } %>
+    <% mahasiswa.forEach(mhs => { %>
+     <ul>
+      <li>nama : <%= mhs.nama %> </li>
+      <li>email : <%= mhs.email %> </li>
+     </ul>
+    <% }) %>
